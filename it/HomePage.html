@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script type="application/javascript" src="/js/bootstrap.js"></script>
+        <link rel="alternate" hreflang="it" href="https://www.teatrostudentesco.it" />
+        <link rel="alternate" hreflang="en" href="https://www.teatrostudentesco.it/en/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.teatrostudentesco.it" />
+        <link rel="stylesheet" type="text/css" href="/css/Stile.css">
+        <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="/js/cookiesAndLogin.js"></script>
+        <link rel="icon" type="image/png" href="/images/Logo.png">
+        <script> $(document).ready(function () { $("#footer").load("footer.html"); }); </script>
+
+        <title>Teatro Studentesco</title>
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <!--Top: logo, login, language-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="HomePage.html">
+                    <img src="/images/Logo.png" alt="TeatroStudentesco" width="70" height="90">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <a class="navbar-brand" href="/en/HomePageEn.html">
+                        <button class="btn" style="margin-right: 10px; border-color: #810614; max-width: fit-content;" type="submit">English
+                            <img src="/images/En.png" alt="English" width="20" height="15" style="margin-bottom: 3px;">
+                        </button>
+                    </a>
+                    <button class="btn" id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto; max-width: 25%; border-color: #810614;">Login</button>
+                    <button class="btn" id="logout" style="width:auto; max-width: 25%; border-color: #810614; display: none;">Logout</button>
+                    <div id="profilo" style="display:none">
+                        <img src="/images/user.png" alt="Immagine Profilo" width="50" height="50" id="immagineProfilo" style="margin-left: 10px;">
+                        <span id="nomeProfilo"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="HomePage.html" style="font-size: medium;">Home</a>
+                        </li>
+                        <li class=" nav-item">
+                                <a class="nav-link" href="https://linktr.ee/LingTecWeb" style="font-size: medium;">Chi siamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Eventi.html" style="font-size: medium;">Eventi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="font-size: medium;">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" style="font-size: medium;">Shop</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+                        <button class="btn" type="submit" style="margin: 0; max-width: 22%; border-color: #810614;">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="margin-top: 10px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/Carosello1.png" class="d-block w-100" alt="1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/Carosello2.png" class="d-block w-100" alt="2">
+                </div>
+                <div class="carousel-item">
+                    <a href="amleto.html">
+                    <img src="/images/Carosello3.png" class="d-block w-100" alt="3">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <p class="text-center" style="font-size: xx-large; color: black; font-weight: 400; margin:1rem;">In Prima Pagina</p>
+
+        <!--Cards-->
+        <div>
+            <section class="cards">
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img class="card-img-top" height="100%" src="/images/amleto.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p style="font-weight: 700; font-size:x-large;"> Amleto </p>
+                            12 - 16 Aprile
+                        </p>
+                        <div class="d-flex">
+                            <div class="d-grid">
+                                <a href="amleto.html" class="btn btn-outline-primary" style="font-size: large; border-color: #810614; margin-top: 1rem;">Prenota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img class="card-img-top" height="100%" src="/images/venezia.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p style="font-weight: 700; font-size:x-large;"> Il Mercante di Venezia </p>
+                            17 - 20 Aprile
+                        </p>
+                        <div class="d-flex">
+                            <div class="d-grid">
+                                <a href="Mercante.html" class="btn btn-outline-primary" style="font-size: large; border-color: #810614; margin-top: 1rem;">Prenota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img class="card-img-top" height="100%" src="/images/pascal.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p style="font-weight: 700; font-size:x-large;"> Il Fu Mattia Pascal </p>
+                            21 - 27 Aprile
+                        </p>
+                        <div class="d-flex">
+                            <div class="d-grid">
+                                <a href="Pascal.html" class="btn btn-outline-primary" style="font-size: large; border-color: #810614; margin-top: 1rem;">Prenota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img class="card-img-top" height="100%" src="/images/promessiSposi.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p style="font-weight: 700; font-size:x-large;"> I Promessi Sposi </p>
+                            27 - 30 Aprile
+                        </p>
+                        <div class="d-flex">
+                            <div class="d-grid">
+                                <a href="PromessiSposi.html" class="btn btn-outline-primary" style="font-size: large; border-color: #810614; margin-top: 1rem;">Prenota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-img-top">
+                        <img class="card-img-top" height="100%" src="/images/caramba.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <p style="font-weight: 700; font-size:x-large;"> Concerto del 1 Maggio </p>
+                            1 Maggio
+                        </p>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-grid">
+                                <a href="Concerto.html" class="btn btn-outline-primary" style="font-size: large; border-color: #810614; margin-top: 1rem;">Prenota</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--Footer versione 2-->
+        <div id="footer"></div>
+
+        <!--popup login-->
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="" method="post" id="formLogin">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="/images/Logo.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="uname" id="emailLogin" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Password" name="psw" id="passwordLogin" required>
+                    <span class="psw"><a href="pswDimenticata.html">Password Dimenticata?</a></span>
+
+                    <button class="btn" id="loginButton" type="submit" style="border-color: #810614;">Login</button>
+                    <label> <input type="checkbox" name="remember"> Ricordami </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1"> <p class="registrati">Non ancora registrato?<a href="Registrazione.html">Sign in</a></p> </div>
+            </form>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) { if (event.target == modal) modal.style.display = "none"; }
+        </script>
+
+        <!--popup cookie-->
+        <div class="cookie">
+            <p>
+                Il nostro sito utilizza i cookie per assicurarti una migliore esperienza sul nostro sito. Se vuoi saperne di più
+                o negare il consenso a tutti o ad alcuni cookie <a href="Cookie.html">clicca qui</a>. Chiudendo questo banner, scorrendo questa pagina,
+                cliccando su un link o proseguendo la navigazione in altra maniera, acconsenti all'uso dei cookie.
+            </p>
+            <div class="d-flex justify-content-end">
+                <div class="d-grid">
+                    <button id="bottoneCookie" type="button" class="btn" style="color: white; font-size: large; border-color: white;">Accetta</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

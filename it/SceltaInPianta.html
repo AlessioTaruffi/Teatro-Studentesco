@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/Cinema.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <script type="application/javascript" src="/js/bootstrap.js"></script>
+        <link rel="alternate" hreflang="it" href="https://www.teatrostudentesco.it" />
+        <link rel="alternate" hreflang="en" href="https://www.teatrostudentesco.it/en/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.teatrostudentesco.it" />
+        <link rel="stylesheet" type="text/css" href="/css/Stile.css">
+        <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script> $(document).ready(function () { $("#navbar").load("header.html"); }); </script>
+        <script src="/js/SceltaInPianta.js" type="text/javascript"></script>
+        <link rel="icon" type="image/png" href="/images/Logo.png">
+
+        <title>Teatro Studentesco</title>
+    </head>
+    
+    <body>
+        <!--NAVIGATION BAR VERSIONE 1-->
+        <!--Top: logo, login, language-->
+        <div id="navbar"></div>
+
+        <div class="container">
+            <p class="text-center" style="font-size: xx-large; color: black; font-weight: 400; margin:1rem;">Seleziona le poltrone</p>
+            <div class="col-md-12">
+                <label for="spettacolo" class="col-form-label-lg"><b>Spettacolo</b></label>
+                <select id="sceltaSpettacolo" size="1" cols="5" name="spettacolo" onchange="spettacoloSelezionato(); restoreSelectedSeats();" required>
+                    <option value="amleto">Amleto</option>
+                    <option value="mercante">Il mercante di Venezia</option>
+                    <option value="pascal">Il fu Mattia Pascal</option>
+                    <option value="promessisposi">I promessi sposi</option>
+                    <option value="concerto">Concerto del 1 Maggio</option>
+                </select>
+
+                <label for="data" class="col-form-label-lg"><b>Data e Ora</b></label>
+                <select id="sceltaData" size="1" cols="5" name="Data" onchange="restoreSelectedSeats();" required>
+                    <option value="Mer 12.04 21:00">Mer 12.04 21:00</option>
+                    <option value="Gio 13.04 21:00">Gio 13.04 21:00</option>
+                    <option value="Ven 14.04 21:00">Ven 14.04 21:00</option>
+                    <option value="Sab 15.04 21:00">Sab 15.04 21:00</option>
+                    <option value="Dom 16.04 21:00">Dom 16.04 21:00</option>
+                </select>
+            </div>
+
+            <div class="palco"> Palcoscenico </div>
+
+            <div class="theatre center">
+                <div class="cinema-seats left">
+                    <div class="cinema-row row-1">
+                        <div id="1.1" class="seat"></div>
+                        <div id="2.1" class="seat"></div>
+                        <div id="3.1" class="seat"></div>
+                        <div id="4.1" class="seat"></div>
+                        <div id="5.1" class="seat"></div>
+                        <div id="6.1" class="seat"></div>
+                        <div id="7.1" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-2">
+                        <div id="1.2" class="seat"></div>
+                        <div id="2.2" class="seat"></div>
+                        <div id="3.2" class="seat"></div>
+                        <div id="4.2" class="seat"></div>
+                        <div id="5.2" class="seat"></div>
+                        <div id="6.2" class="seat"></div>
+                        <div id="7.2" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-3">
+                        <div id="1.3" class="seat"></div>
+                        <div id="2.3" class="seat"></div>
+                        <div id="3.3" class="seat"></div>
+                        <div id="4.3" class="seat"></div>
+                        <div id="5.3" class="seat"></div>
+                        <div id="6.3" class="seat"></div>
+                        <div id="7.3" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-4">
+                        <div id="1.4" class="seat"></div>
+                        <div id="2.4" class="seat"></div>
+                        <div id="3.4" class="seat"></div>
+                        <div id="4.4" class="seat"></div>
+                        <div id="5.4" class="seat"></div>
+                        <div id="6.4" class="seat"></div>
+                        <div id="7.4" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-5">
+                        <div id="1.5" class="seat"></div>
+                        <div id="2.5" class="seat"></div>
+                        <div id="3.5" class="seat"></div>
+                        <div id="4.5" class="seat"></div>
+                        <div id="5.5" class="seat"></div>
+                        <div id="6.5" class="seat"></div>
+                        <div id="7.5" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-6">
+                        <div id="1.6" class="seat"></div>
+                        <div id="2.6" class="seat"></div>
+                        <div id="3.6" class="seat"></div>
+                        <div id="4.6" class="seat"></div>
+                        <div id="5.6" class="seat"></div>
+                        <div id="6.6" class="seat"></div>
+                        <div id="7.6" class="seat"></div>
+                    </div>
+            
+                    <div class="cinema-row row-7">
+                        <div id="1.7" class="seat"></div>
+                        <div id="2.7" class="seat"></div>
+                        <div id="3.7" class="seat"></div>
+                        <div id="4.7" class="seat"></div>
+                        <div id="5.7" class="seat"></div>
+                        <div id="6.7" class="seat"></div>
+                        <div id="7.7" class="seat"></div>
+                    </div>
+                </div>
+
+                <div class="cinema-seats right">
+                    <div class="cinema-row row-1">
+                        <div id="1.8" class="seat"></div>
+                        <div id="2.8" class="seat"></div>
+                        <div id="3.8" class="seat"></div>
+                        <div id="4.8" class="seat"></div>
+                        <div id="5.8" class="seat"></div>
+                        <div id="6.8" class="seat"></div>
+                        <div id="7.8" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-2">
+                        <div id="1.9" class="seat"></div>
+                        <div id="2.9" class="seat"></div>
+                        <div id="3.9" class="seat"></div>
+                        <div id="4.9" class="seat"></div>
+                        <div id="5.9" class="seat"></div>
+                        <div id="6.9" class="seat"></div>
+                        <div id="7.9" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-3">
+                        <div id="1.10" class="seat"></div>
+                        <div id="2.10" class="seat"></div>
+                        <div id="3.10" class="seat"></div>
+                        <div id="4.10" class="seat"></div>
+                        <div id="5.10" class="seat"></div>
+                        <div id="6.10" class="seat"></div>
+                        <div id="7.10" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-4">
+                        <div id="1.11" class="seat"></div>
+                        <div id="2.11" class="seat"></div>
+                        <div id="3.11" class="seat"></div>
+                        <div id="4.11" class="seat"></div>
+                        <div id="5.11" class="seat"></div>
+                        <div id="6.11" class="seat"></div>
+                        <div id="7.11" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-5">
+                        <div id="1.12" class="seat"></div>
+                        <div id="2.12" class="seat"></div>
+                        <div id="3.12" class="seat"></div>
+                        <div id="4.12" class="seat"></div>
+                        <div id="5.12" class="seat"></div>
+                        <div id="6.12" class="seat"></div>
+                        <div id="7.12" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-6">
+                        <div id="1.13" class="seat"></div>
+                        <div id="2.13" class="seat"></div>
+                        <div id="3.13" class="seat"></div>
+                        <div id="4.13" class="seat"></div>
+                        <div id="5.13" class="seat"></div>
+                        <div id="6.13" class="seat"></div>
+                        <div id="7.13" class="seat"></div>
+                    </div>
+                
+                    <div class="cinema-row row-7">
+                        <div id="1.14" class="seat"></div>
+                        <div id="2.14" class="seat"></div>
+                        <div id="3.14" class="seat"></div>
+                        <div id="4.14" class="seat"></div>
+                        <div id="5.14" class="seat"></div>
+                        <div id="6.14" class="seat"></div>
+                        <div id="7.14" class="seat"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="legend">
+                <div class="seat free"></div><span>Libero</span>
+                <div class="seat" id="legenda"></div><span>Selezionato</span>
+                <div class="seat occupied"></div><span>Occupato</span>
+            </div>
+
+            <br>
+            
+            <button id="prenota" class="btn" style="border-color: #810614; max-width: 20%; margin-left: 40%; margin-right: 40%;">Prenota</button>
+        </div>
+        <script>
+            $(document).ready(function() { restoreSelectedSeats(); });
+
+            const saveButton = document.getElementById('prenota');
+            saveButton.addEventListener('click', () => { sendSelectedSeatsToServer();
+                alert("Posti prenotati con successo!");
+                window.location.reload();
+            });
+
+
+            $(".cinema-seats .seat").on("click", function () { if(!$(this).hasClass("selected")) { $(this).toggleClass("active"); } });
+        </script>
+    </body>
+</html>
