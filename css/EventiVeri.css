@@ -1,0 +1,44 @@
+*{ font-family: 'Montserrat', sans-serif; }
+
+p{
+    margin: 0px;
+    padding: 0px;
+    font-size: medium;
+    margin-top: 0%;
+}
+
+.corpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    border-radius: 0;
+    border-color: #810614;
+}
+
+.btn:hover{
+    background-color: #810614;
+    color: white;
+}
+
+@media screen and (max-width: 800px) { }
+
+@media screen and (max-width: 900px) { #corpoPiccolo{max-width: 100%;} }
+
+@media screen and (min-width: 900px) { #corpoPiccolo{max-width: 75%;} }
