@@ -1,0 +1,52 @@
+<script src="/js/cookiesAndLogin.js"></script>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="HomePageEn.html">
+          <img src="/images/Logo.png" alt="TeatroStudentesco" width="70" height="90">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <a class="navbar-brand" href="/it/HomePage.html">
+              <button class="btn" style="margin-right: 10px; border-color: #810614; max-width: fit-content;" type="submit">Italiano
+                  <img src="/images/Ita.png" alt="Italiano" width="20" height="15" style="margin-bottom: 3px;">
+              </button>
+          </a>
+          <button class="btn" id="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto; max-width: 25%; border-color: #810614;">Login</button>
+          <button class="btn" id="logout" style="width:auto; max-width: 25%; border-color: #810614; display: none;">Logout</button>
+          <div id="profilo" style="display:none">
+              <img src="/images/user.png" alt="Immagine Profilo" width="50" height="50" id="immagineProfilo" style="margin-left: 10px;">
+              <span id="nomeProfilo"></span>
+          </div>
+      </div>
+  </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a id="home" class="nav-link" href="HomePageEn.html" style="font-size: medium;">Home</a>
+              </li>
+              <li class=" nav-item">
+                    <a id="about" class="nav-link" href="https://linktr.ee/LingTecWeb" style="font-size: medium;">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a id="events" class="nav-link active" href="Eventi.html" style="font-size: medium; ">Events</a>
+              </li>
+              <li class="nav-item">
+                  <a id="news" class="nav-link" href="#" style="font-size: medium;">News</a>
+              </li>
+              <li class="nav-item">
+                  <a id="shop" class="nav-link" href="#" style="font-size: medium;">Shop</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
+              <button class="btn" type="submit" style="margin: 0; max-width: 22%; border-color: #810614;">Search</button>
+          </form>
+      </div>
+  </div>
+</nav>
